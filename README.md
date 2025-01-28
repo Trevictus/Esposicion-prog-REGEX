@@ -48,7 +48,7 @@ Supongamos que queremos validar si un texto es un correo electrónico válido. U
 electrónico generalmente tiene la forma usuario@dominio.com. Podemos usar la siguiente 
 expresión regular: 
 ```
-val regex = Regex("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")
+val regex = Regex("[a-zA-Z0-9._-]+@[a-zA-Z0-9.]+\\.\w{2,}")
 ```
 ● [a-zA-Z0-9._%+-]+: Coincide con el nombre del usuario (letras, números, puntos, 
 guiones bajos, etc.).  
