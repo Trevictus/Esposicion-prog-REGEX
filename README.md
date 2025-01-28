@@ -13,6 +13,36 @@ contraseña segura o un número de teléfono válido.
 texto.  
 ● Reemplazar texto: Cambiar partes de un texto que coincidan con un patrón.  
 ● Dividir cadenas: Separar un texto en partes basadas en un patrón.  
+## 3. Tipos de expresiones regulares
+Coincidencias Basicas  
+.       - Cualquier Caracter, excepto nueva linea  
+\d      - Cualquier Digitos (0-9)  
+\D      - No es un Digito (0-9)  
+\w      - Caracter de Palabra (a-z, A-Z, 0-9, _)  
+\W      - No es un Caracter de Palabra.  
+\s      - Espacios de cualquier tipo. (espacio, tab, nueva linea)  
+\S      - No es un Espacio, Tab o nueva linea.  
+
+Limites  
+\b      - Limite de Palabra  
+\B      - No es un Limite de Palabra  
+^       - Inicio de una cadena de texto  
+$       - Final de una cadena de texto  
+
+Cuantificadores  
+*       - 0 o Más  
++       - 1 o Más  
+?       - 0 o Uno   
+{3}     - Numero Exacto  
+{3,4}   - Rango de Numeros (Minimo, Maximo)  
+
+Conjuntos de Caracteres  
+[]      - Caracteres dentro de los brackets  
+[^ ]    - Caracteres que NO ESTAN dentro de los brackets  
+
+Grupos  
+( )     - Grupo  
+|       - Uno u otro  
 ## 3. Explica las expresiones regulares con un ejemplo práctico. 
 Supongamos que queremos validar si un texto es un correo electrónico válido. Un correo 
 electrónico generalmente tiene la forma usuario@dominio.com. Podemos usar la siguiente 
