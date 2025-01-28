@@ -8,11 +8,11 @@ electrónico válido o para extraer números de un texto.
 ## 2. ¿Para qué se usan? 
 Las expresiones regulares se usan para: 
 ● Validar datos: Por ejemplo, verificar si un texto es un correo electrónico, una 
-contraseña segura o un número de teléfono válido. 
+contraseña segura o un número de teléfono válido.  
 ● Buscar patrones: Encontrar palabras, números o combinaciones específicas en un 
-texto. 
-● Reemplazar texto: Cambiar partes de un texto que coincidan con un patrón. 
-● Dividir cadenas: Separar un texto en partes basadas en un patrón. 
+texto.  
+● Reemplazar texto: Cambiar partes de un texto que coincidan con un patrón.  
+● Dividir cadenas: Separar un texto en partes basadas en un patrón.  
 ## 3. Explica las expresiones regulares con un ejemplo práctico. 
 Supongamos que queremos validar si un texto es un correo electrónico válido. Un correo 
 electrónico generalmente tiene la forma usuario@dominio.com. Podemos usar la siguiente 
@@ -21,11 +21,11 @@ expresión regular:
 val regex = Regex("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")
 ```
 ● [a-zA-Z0-9._%+-]+: Coincide con el nombre del usuario (letras, números, puntos, 
-guiones bajos, etc.). 
-● @: Coincide con el símbolo "@". 
-● [a-zA-Z0-9.-]+: Coincide con el dominio (letras, números, puntos, guiones). 
-● \\.: Coincide con el punto antes del dominio de nivel superior. 
-● [a-zA-Z]{2,}: Coincide con el dominio de nivel superior (como .com, .es, etc.). 
+guiones bajos, etc.).  
+● @: Coincide con el símbolo "@".  
+● [a-zA-Z0-9.-]+: Coincide con el dominio (letras, números, puntos, guiones).  
+● \\.: Coincide con el punto antes del dominio de nivel superior.  
+● [a-zA-Z]{2,}: Coincide con el dominio de nivel superior (como .com, .es, etc.).  
 Aqui un ejemplo en código: 
 ```
 fun main() { 
@@ -117,7 +117,7 @@ su código. En Kotlin, puedes extender una clase con nuevas funciones. Por ejemp
 puedes añadir una función a la clase List<String> para filtrar elementos usando una 
 expresión regular. 
  
-6. Función de extensión filtrar para List<String>. 
+## 6. Función de extensión filtrar para List<String>. 
 Vamos a crear una función de extensión llamada filtrar que filtre los elementos de una lista 
 de cadenas (List<String>) usando una expresión regular. 
  
@@ -134,9 +134,9 @@ println(resultado) // Salida: [hola, adios, kotlin]
 }
 ```
 Explicación: 
-1. Definimos la función de extensión filtrar para List<String>. 
-2. La función recibe una expresión regular (regex) como parámetro. 
+1. Definimos la función de extensión filtrar para List<String>.  
+2. La función recibe una expresión regular (regex) como parámetro.  
 3. Usamos el método filter de Kotlin para recorrer la lista y quedarnos solo con los 
-elementos que coinciden con la expresión regular. 
+elementos que coinciden con la expresión regular.  
 4. En el ejemplo, la expresión regular [a-zA-Z]+ filtra las cadenas que contienen solo 
-letras.
+letras. 
