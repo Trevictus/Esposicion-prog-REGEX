@@ -6,7 +6,7 @@ búsqueda. Se utiliza para buscar, validar o manipular texto de manera eficiente
 ejemplo, puedes usar una expresión regular para verificar si un texto es un correo 
 electrónico válido o para extraer números de un texto. 
 ## 2. ¿Para qué se usan? 
-Las expresiones regulares se usan para: 
+Las expresiones regulares se usan para:  
 ● Validar datos: Por ejemplo, verificar si un texto es un correo electrónico, una 
 contraseña segura o un número de teléfono válido.  
 ● Buscar patrones: Encontrar palabras, números o combinaciones específicas en un 
@@ -38,8 +38,7 @@ println("El correo no es válido.")
 } 
 }
 ```
-## 4. Localiza en la práctica del Ahorcado dónde se utiliza una 
-expresión regular. 
+## 4. Localiza en la práctica del Ahorcado dónde se utiliza una expresión regular. 
  
 En el juego del Ahorcado, una expresión regular podría usarse para validar que la entrada 
 del usuario sea una sola letra y no un número, símbolo o cadena vacía. Por ejemplo la 
