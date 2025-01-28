@@ -1,4 +1,4 @@
-# Esposicion-prog-REGEX
+# Exposición-prog-REGEX
 
 ## 1. ¿Qué es una expresión regular? 
 Una expresión regular (o regex) es una secuencia de caracteres que define un patrón de 
