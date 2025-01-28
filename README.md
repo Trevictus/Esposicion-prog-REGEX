@@ -60,7 +60,7 @@ Aqui un ejemplo en código:
 ```
 fun main() { 
 val email = "usuario@dominio.com" 
-val regex = Regex("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}") 
+val regex = Regex("[a-zA-Z0-9._-]+@[a-zA-Z0-9.]+\\.\w{2,}") 
 if (regex.matches(email)) { 
 println("El correo es válido.") 
 } else { 
@@ -127,7 +127,7 @@ repeticiones
 }
 ```
  
-En este código tenemos que la expresión regular se encuentra en esta parte del codigo: 
+En este código encontramos la expresión regular en esta parte: 
 ```
 val patron = if (idioma == Idioma.ES) { 
     "^[a-záéíóúüñ]+$" 
@@ -137,7 +137,7 @@ val patron = if (idioma == Idioma.ES) {
 ```
 Esta expresión  usa para la implementación de las palabras acentuadas según si el 
 parámetro del idioma coincide con el idioma español,en caso contrario su rango de acción 
-recae solo en las letras del abecedario  
+recae solo en las letras del abecedario.  
  
  
 ## 5. ¿Qué es una función de extensión? 
