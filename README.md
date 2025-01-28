@@ -151,16 +151,29 @@ Vamos a crear una función de extensión llamada filtrar que filtre los elemento
 de cadenas (List<String>) usando una expresión regular. 
  
 ```
-fun List<String>.filtrar(regex: Regex): List<String> { 
-    return this.filter { regex.matches(it) } 
-} 
- 
-fun main() { 
-    val lista = listOf("hola", "123", "adios", "abc123", "kotlin") 
-    val regex = Regex("[a-zA-Z]+") // Solo letras 
-    val resultado = lista.filtrar(regex) 
-println(resultado) // Salida: [hola, adios, kotlin] 
+fun main(){
+    val palabras = listOf("hola", "adiós", "123", "kotlin", "4567", "abc")
+
+    // Definimos una expresión regular para filtrar palabras que contengan solo dígitos
+    val regex = Regex("\\d+")
+
+    // Usamos nuestra función de extensión para filtrar
+    val palabrasConDigitos = palabras.filtrarConRegex(regex)
+
+    println(palabrasConDigitos) // Resultado: ["123", "4567"]
 }
+
+fun <T> List<T>.filtrarConRegex(regex: Regex): List<T> {
+    val resultado = mutableListOf<T>() // Lista mutable para almacenar los elementos filtrados
+    for (elemento in this) { // "this" se refiere a la lista actual
+        // Convertimos el elemento a String y verificamos si coincide con la expresión regular
+        if (elemento.toString().matches(regex)) {
+            resultado.add(elemento) // Si coincide, lo agregamos a la lista resultante
+        }
+    }
+    return resultado // Devolvemos la lista filtrada
+}
+
 ```
 Explicación: 
 1. Definimos la función de extensión filtrar para List<String>.  
