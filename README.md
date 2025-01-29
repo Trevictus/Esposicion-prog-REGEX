@@ -175,6 +175,38 @@ fun <T> List<T>.filtrarConRegex(regex: Regex): List<T> {
 }
 
 ```
+
+Otro metodo para poder realizar este tipo de paradigma de manera mas 'segura' es la creacion
+de la expresion regular dentro de la funcion :
+
+```
+fun main(){
+    val palabras = listOf("hola", "adiós", "123", "kotlin", "4567", "abc")
+
+    // Usamos nuestra función de extensión para filtrar
+    val palabrasConDigitos = palabras.filtrarConRegex()
+
+    println(palabrasConDigitos) // Resultado: ["123", "4567"]
+}
+
+fun <T> List<T>.filtrarConRegex(): List<T> {
+    val resultado = mutableListOf<T>() // Lista mutable para almacenar los elementos filtrados
+
+
+    // Definimos una expresión regular para filtrar palabras que contengan solo dígitos
+    val regex = Regex("\\d+")
+
+
+    for (elemento in this) { // "this" se refiere a la lista actual
+        // Convertimos el elemento a String y verificamos si coincide con la expresión regular
+        if (elemento.toString().matches(regex)) {
+            resultado.add(elemento) // Si coincide, lo agregamos a la lista resultante
+        }
+    }
+    return resultado // Devolvemos la lista filtrada
+}
+
+```
 Explicación: 
 1. Definimos la función de extensión filtrar para List<String>.  
 2. La función recibe una expresión regular (regex) como parámetro.  
