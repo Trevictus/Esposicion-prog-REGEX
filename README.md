@@ -176,6 +176,15 @@ fun <T> List<T>.filtrarConRegex(regex: Regex): List<T> {
 
 ```
 
+Explicación: 
+1. Definimos la función de extensión filtrar para List<String>.  
+2. La función recibe una expresión regular (regex) como parámetro.  
+3. Usamos el método filter de Kotlin para recorrer la lista y quedarnos solo con los 
+elementos que coinciden con la expresión regular.  
+4. En el ejemplo, la expresión regular [a-zA-Z]+ filtra las cadenas que contienen solo 
+letras.
+
+
 Otro metodo para poder realizar este tipo de paradigma de manera mas 'segura' es la creacion
 de la expresion regular dentro de la funcion :
 
@@ -207,10 +216,4 @@ fun <T> List<T>.filtrarConRegex(): List<T> {
 }
 
 ```
-Explicación: 
-1. Definimos la función de extensión filtrar para List<String>.  
-2. La función recibe una expresión regular (regex) como parámetro.  
-3. Usamos el método filter de Kotlin para recorrer la lista y quedarnos solo con los 
-elementos que coinciden con la expresión regular.  
-4. En el ejemplo, la expresión regular [a-zA-Z]+ filtra las cadenas que contienen solo 
-letras. 
+
