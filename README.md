@@ -57,7 +57,7 @@ guiones bajos, etc.).
 ● \\\.: Coincide con el punto antes del dominio de nivel superior.  
 ● \w{2,}: Coincide con el dominio de nivel superior (como .com, .es, etc.).  
 Aqui un ejemplo en código: 
-```
+```kotlin
 fun main() { 
 val email = "usuario@dominio.com" 
 val regex = Regex("[a-zA-Z0-9._-]+@[a-zA-Z0-9.]+\\.\w{2,}") 
@@ -73,7 +73,7 @@ println("El correo no es válido.")
 En el juego del Ahorcado, una expresión regular podría usarse para validar que la entrada 
 del usuario sea una sola letra y no un número, símbolo o cadena vacía. Por ejemplo la 
 función generarPalabras en la clase Palabra: 
-``` 
+```kotlin
   fun generarPalabras( 
             cantidad: Int, 
             tamanioMin: Int, 
@@ -128,7 +128,7 @@ repeticiones
 ```
  
 En este código encontramos la expresión regular en esta parte: 
-```
+```kotlin
 val patron = if (idioma == Idioma.ES) { 
     "^[a-záéíóúüñ]+$" 
 } else { 
@@ -150,7 +150,7 @@ expresión regular.
 Vamos a crear una función de extensión llamada filtrar que filtre los elementos de una lista 
 de cadenas (List<String>) usando una expresión regular. 
  
-```
+```kotlin
 fun main(){
     val palabras = listOf("hola", "adiós", "123", "kotlin", "4567", "abc")
 
@@ -188,7 +188,7 @@ letras.
 Otro metodo para poder realizar este tipo de paradigma de manera mas 'segura' es la creacion
 de la expresion regular dentro de la funcion :
 
-```
+```kotlin
 fun main(){
     val palabras = listOf("hola", "adiós", "123", "kotlin", "4567", "abc")
 
