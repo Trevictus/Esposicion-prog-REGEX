@@ -43,7 +43,7 @@ Conjuntos de Caracteres
 Grupos  
 ( )     - Grupo  
 |       - Uno u otro  
-## 3. Explica las expresiones regulares con un ejemplo práctico. 
+## 4. Explica las expresiones regulares con un ejemplo práctico. 
 Supongamos que queremos validar si un texto es un correo electrónico válido. Un correo 
 electrónico generalmente tiene la forma usuario@dominio.com. Podemos usar la siguiente 
 expresión regular: 
@@ -68,7 +68,7 @@ println("El correo no es válido.")
 } 
 }
 ```
-## 4. Localiza en la práctica del Ahorcado dónde se utiliza una expresión regular. 
+## 5. Localiza en la práctica del Ahorcado dónde se utiliza una expresión regular. 
  
 En el juego del Ahorcado, una expresión regular podría usarse para validar que la entrada 
 del usuario sea una sola letra y no un número, símbolo o cadena vacía. Por ejemplo la 
@@ -140,13 +140,13 @@ parámetro del idioma coincide con el idioma español,en caso contrario su rango
 recae solo en las letras del abecedario.  
  
  
-## 5. ¿Qué es una función de extensión? 
+## 6. ¿Qué es una función de extensión? 
 Una función de extensión es una función que se añade a una clase existente sin modificar 
 su código. En Kotlin, puedes extender una clase con nuevas funciones. Por ejemplo, 
 puedes añadir una función a la clase List<String> para filtrar elementos usando una 
 expresión regular. 
  
-## 6. Función de extensión filtrar para List<String>. 
+## 7. Función de extensión filtrar para List<String>. 
 Vamos a crear una función de extensión llamada filtrar que filtre los elementos de una lista 
 de cadenas (List<String>) usando una expresión regular. 
  
