@@ -54,8 +54,8 @@ val regex = Regex("[a-zA-Z0-9._-]+@[a-zA-Z0-9.]+\\.\w{2,}")
 guiones bajos, etc.).  
 ● @: Coincide con el símbolo "@".  
 ● [a-zA-Z0-9.-]+: Coincide con el dominio (letras, números, puntos, guiones).  
-● \\.: Coincide con el punto antes del dominio de nivel superior.  
-● \\.\w{2,}: Coincide con el dominio de nivel superior (como .com, .es, etc.).  
+● \\\.: Coincide con el punto antes del dominio de nivel superior.  
+● \w{2,}: Coincide con el dominio de nivel superior (como .com, .es, etc.).  
 Aqui un ejemplo en código: 
 ```
 fun main() { 
