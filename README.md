@@ -55,7 +55,7 @@ guiones bajos, etc.).
 ● @: Coincide con el símbolo "@".  
 ● [a-zA-Z0-9.-]+: Coincide con el dominio (letras, números, puntos, guiones).  
 ● \\.: Coincide con el punto antes del dominio de nivel superior.  
-● [a-zA-Z]{2,}: Coincide con el dominio de nivel superior (como .com, .es, etc.).  
+● \\.\w{2,}: Coincide con el dominio de nivel superior (como .com, .es, etc.).  
 Aqui un ejemplo en código: 
 ```
 fun main() { 
